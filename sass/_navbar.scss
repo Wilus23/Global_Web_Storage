@@ -7,7 +7,7 @@ nav{
     .logo{
         // width: 30%;
         img{
-            width: 104px;
+            width: 204px;
             // 184px width było spoko
             margin-left: 10%;
         }
@@ -21,16 +21,31 @@ nav{
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            align-items: center;
+            // align-items: flex-start;
             grid-template-rows: 1fr 1fr;
             padding-left: 0;
             margin: 0;
             list-style: none;
-            color: white;
                 li{
                 flex-grow: 1;
                 list-style: none;
+                // padding-left: 40px;
                 line-height: 170%;
+                    button{
+                    width: 150px;
+                    height: 30px;
+                    border-radius: 30%;
+                    border: 1px solid white;
+                    background-color: transparent;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        padding: 40px 9px 35px;
+                    }
                 }
             }
         }
