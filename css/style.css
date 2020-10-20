@@ -114,6 +114,7 @@ nav .nav-links ul li button {
 }
 
 nav .nav-links ul li a {
+  margin-top: 250px;
   text-decoration: none;
   color: white;
   font-size: 20px;
