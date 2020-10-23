@@ -2,13 +2,65 @@ html {
   line-height: 1.15;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 18px;
+  font-family: 'Metropolis-Regular', "Segoe UI", Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
-header {
+/* montserrat-300 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("assets/fonts/Montserrat-Light.ttf") format("truetype");
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), url("assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat Medium"), url("assets/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat SemiBold"), url("assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), url("assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Montserrat ExtraBold"), url("assets/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+section {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,104 +74,81 @@ header {
   width: 100%;
 }
 
-header main {
+section main {
   margin-top: 20%;
   width: 40%;
 }
 
-header main h1 {
+section main h1 {
   font-size: 40px;
-  margin-left: 50px;
 }
 
-header aside {
+section aside {
   width: 60%;
 }
 
-header aside img {
+section aside img {
   position: absolute;
   width: 50%;
   right: 0;
   top: 0;
 }
 
-header aside img:first-of-type {
+section aside img:first-of-type {
   width: 80%;
 }
 
-header aside img:nth-of-type(2) {
+section aside img:nth-of-type(2) {
   width: 40%;
 }
 
-header aside img:last-of-type {
+section aside img:last-of-type {
   width: 30%;
   margin-right: 30%;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
-nav {
+header {
+  width: 100%;
   position: fixed;
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
-  z-index: 2;
-}
-
-nav .logo img {
-  width: 204px;
-  margin-left: 10%;
-}
-
-nav .nav-links {
-  width: 60%;
-  margin-left: 30%;
-}
-
-nav .nav-links ul {
-  width: 100%;
-  height: 100%;
+  background-color: #0059ff;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  padding-left: 0;
-  margin: 0;
-  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-nav .nav-links ul li {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  list-style: none;
-  line-height: 170%;
+header div.logo {
+  width: 30%;
 }
 
-nav .nav-links ul li button {
-  width: 150px;
-  height: 30px;
-  border-radius: 30%;
-  border: 1px solid white;
-  background-color: transparent;
-}
-
-nav .nav-links ul li a {
-  margin-top: 250px;
-  text-decoration: none;
+header div.logo a {
   color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 40px 9px 35px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+header nav {
+  width: 70%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
