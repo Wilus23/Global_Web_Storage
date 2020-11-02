@@ -111,7 +111,7 @@ section aside img:last-of-type {
 header {
   width: 100%;
   position: fixed;
-  background-color: #0059ff;
+  background-color: transparent;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,6 +119,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 header div.logo {
@@ -126,9 +129,10 @@ header div.logo {
 }
 
 header div.logo a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 30px;
+  margin-left: 10%;
 }
 
 header nav {
@@ -150,5 +154,12 @@ header nav ul li {
 header nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
+}
+
+.activeNav {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
